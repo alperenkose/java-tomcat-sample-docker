@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'Docker'
+    }
     stages {
         stage('Build Application') {
             steps {
